@@ -1,0 +1,209 @@
+#carousel img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mainContain {
+    background-color: #34495E;
+    overflow: hidden;
+}
+
+.tabBar {
+
+}
+
+.tabBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.tabBar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 45px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.tabBar li a:hover {
+    background-color: #F5B7B1;
+}
+
+.Top {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s;
+
+}
+
+.Top:hover {
+    transform: scale(1.15);
+}
+
+.Avatar {
+    overflow: hidden;
+}
+
+.Avatar img {
+    width: 4rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.name {
+    color: white;
+    font-size: 25px;
+}
+
+.flexContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-around;
+    height: 45px;
+}
+
+.Container {
+    margin: -100px auto 0;
+    border-radius: 30px 30px 0 0;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    width: 98%;
+    height: 1000px;
+}
+
+.dropdownContent1 {
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 122px;
+    opacity: 0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transition: visibility 1s, opacity 1s;
+}
+
+.dropdownContent1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent1 a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdownContent1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.warper {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    column-gap: 30px;
+    grid-template-rows: repeat(2, 400px);
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.warper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.warper > div {
+    overflow: hidden;
+    position: relative;
+}
+
+.warper img {
+    transition: all 0.6s ease;
+    opacity: 1;
+}
+
+.three:hover img {
+    transform: scale(1.15, 1.15);
+    transition: all 0.6s ease;
+    opacity: 0.6;
+}
+
+.two:hover img {
+    transform: scale(1.15, 1.15);
+    transition: all 0.6s ease;
+    opacity: 0.6;
+}
+
+.one:hover img {
+    transform: scale(1.15, 1.15);
+    transition: all 0.6s ease;
+    opacity: 0.6;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-row: 1;
+    margin-top: 30px;
+}
+
+.two {
+    grid-column-start: 12;
+    grid-column-end: 24;
+    grid-row: 1;
+    margin-top: 30px;
+}
+
+
+.three {
+    grid-column-start: 1;
+    grid-column-end: 24;
+    grid-row: 2;
+    margin-top: 30px;
+}
+
+.one, .two, .three {
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px gray;
+}
+
+.one p, .two p {
+    position: absolute;
+    color: #fff;
+    transform: translate(-360px, 0);
+    top: 35%;
+    left: 25%;
+    transition: all 0.6s;
+}
+
+.three p {
+    position: absolute;
+    color: #fff;
+    transform: translate(-700px, 0);
+    top: 35%;
+    left: 25%;
+    transition: all 0.6s;
+}
+
+.one:hover p, .two:hover p, .three:hover p {
+    transform: translate(0, 0);
+    transition: all 0.6s;
+}
+
+.warper p {
+    font-size: 25px;
+}
